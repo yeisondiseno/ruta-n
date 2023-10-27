@@ -16,12 +16,9 @@ function App() {
       });
   }, []);
 
-  console.log("characters", characters);
-
   return (
     <>
       <h1>Este es un título</h1>
-      <h2>titulo</h2>
       <div className="characters">
         {characters?.map((cha) => (
           <Card key={cha.id} char={cha} />
